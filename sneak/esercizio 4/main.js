@@ -33,13 +33,21 @@ const domanda = prompt("come ti chiami?");
 
 
 let permesso = false;
-for (let i = 0; i < listaInvitati.length; i++) {
+/* for (let i = 0; i < listaInvitati.length; i++) {
     console.log((`${domanda == listaInvitati[i] ? (permesso = true) : (permesso = false)}`));   
-}
+} */
+listaInvitati.forEach(invitato => {
+    if (invitato == domanda) {
+        permesso = true;
+    }
+});
 
-if (permesso == true) {
+console.log( `accesso ${ permesso ? "consentito" : "negato"}`);
+/* if (permesso == true) {
     console.log("Benvenuto");
 } else {
     console.log("Stop");
-};
+}; */
+
+/* console.log((`${permesso == true ? console.log("Benvenuto") : console.log("Stop")}`)); */
 
