@@ -34,10 +34,12 @@ const domanda = prompt("come ti chiami?");
 
 let permesso = false;
 for (let i = 0; i < listaInvitati.length; i++) {
-
-    console.log(${domanda == listaInvitati[i] ? "entra alla festa" : "non sei in lista"});
-    
+    console.log((`${domanda == listaInvitati[i] ? (permesso = true) : (permesso = false)}`));   
 }
 
-
+if (permesso == true) {
+    console.log("Benvenuto");
+} else {
+    console.log("Stop");
+};
 
