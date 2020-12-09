@@ -7,7 +7,7 @@ const secondo = 5;
 const maggiore = [];
 
 const cercaMaggiore = (`${primo < secondo ? maggiore.push(secondo) : maggiore.push(primo)}`);
-/* console.log(cercaMaggiore); */
+console.log(cercaMaggiore);
 
 /* console.log(`${userName} is ${(now - yob) < 40 ? "still youngh" : "getting old"} `); */
 
